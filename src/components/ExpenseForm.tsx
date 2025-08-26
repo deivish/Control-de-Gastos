@@ -11,7 +11,7 @@ import { useBudget } from "../hooks/useBudget";
 
 export default function ExpenseForm() {
     const [expense, setExpense] = useState<DraftExpense>({
-        amount: 0,
+        amount: '' as unknown as number,
         expenseName: '',
         category: '',
         date: new Date()
